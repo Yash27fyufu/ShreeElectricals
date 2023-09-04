@@ -1,0 +1,695 @@
+
+body {
+  font-family: 'Calibri Light', 'Segoe UI', Arial, sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+
+
+.footer-sticky
+{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 45px;
+    background: rgb(61, 85, 93,0.5);
+}
+.footer-sticky ul
+{
+    padding-bottom: 20px; 
+
+    list-style: none;
+}
+.footer-sticky ul li
+{
+    display: inline-block;
+    float: left;
+    margin-top: 3px; 
+}
+.footer-sticky ul li a
+{
+    color: #eceff1;
+}
+.footer-sticky ul li a:hover
+{
+    color: #b71c1c;
+}
+.footer-sticky ul #footer-copyright
+{
+    font-family: 'Vollkorn', helvetica;
+    font-size: 1.6rem; 
+    float: right;
+
+    color: #eceff1;
+}
+
+.footer-sticky ul #footer-copyright1
+{
+    font-family: 'Vollkorn', helvetica;
+    font-size: 1.6rem; 
+    float: left;
+
+    color: #eceff1;
+}
+
+
+nav {
+  background-color: #f45b69;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  
+}
+
+nav a {
+  color: white;
+
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section#homepage {
+  min-height: 10vh;
+}
+
+section#products {
+  min-height: 10vh;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: grey;
+}
+
+section#deals {
+}
+
+section#about {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #ffffff 0%, #ff887d 50%, #fd9797 75%, #ffffff 100%);
+  color: #084012;
+}
+
+section#contact-page {
+  
+    height: 150vh;
+  }
+
+article {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0px auto;
+}
+
+.ph2 {
+    width: 100vw;
+  color: #f45b69;
+
+  padding: 40px 0px 0px 0px;
+  font-size: 3.4em;
+  font-family: 'Calibri Light', 'Segoe UI', Arial, sans-serif;
+font-weight: 1000;
+word-spacing: 1vw;
+}
+.nature{
+    height: 50vh;
+    width: 60vw;
+}
+.mapss{
+    text-align: center;
+}
+.telelink{
+    color: #333;
+  text-decoration: none;
+  font-weight: 450;
+    
+}
+.telelink:hover{
+    color: rgb(70, 70, 232);
+  text-decoration: underline;
+  font-size:27px;
+
+    
+}
+.telelinkfooter{
+    color: #333333;
+  text-decoration: none;
+  font-weight: 450;
+    
+}
+.telelinkfooter:hover{
+  text-decoration: underline;
+  font-size:27px;
+
+    
+}
+
+#contact-page p {
+    color: black;
+    line-height: 1.5;
+    font-weight: 750;
+    font-family: 'Calibri Light', 'Segoe UI', Arial, sans-serif;
+    
+  }
+
+.ph2innav {
+    opacity: 100;
+    width: 30vw;
+    margin-right: 22vw;
+  font-size: 1.5em;
+  font-family: 'Calibri Light', 'Segoe UI', Arial, sans-serif;
+
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.fleximgtext{
+    margin-top: -5vh;
+    opacity: 0;
+    font-size: 22px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.goback{
+    z-index: 0;
+}
+
+.timeline ul {
+  padding: 50px 0;
+  z-index: -2;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #f45b69;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f45b69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f45b69;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+.timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #f45b69;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
+}
+
+.timeline-clippy ul li::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+  bottom: 12px;
+}
+
+.timeline-star ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.timeline-heptagon ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.timeline-infinite ul li::after {
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.flex-container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-flex; 
+    display: flex;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  .flex-title {
+    color: #f1f1f1;
+    position: relative;
+    font-size: 3vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(0deg);
+    top: 15%;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-title {
+      transform: rotate(0deg) !important;
+    }
+  }
+  
+  .flex-about {
+    margin-top: 10vh;
+    opacity: 100;
+    color: #f1f1f1;
+    position: relative;
+    width: 70%;
+    font-size: 2vw;
+    padding: 5%;
+    top: 20%;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin: auto;
+    text-align: left;
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-about {
+      padding: 0%;
+      border: 0px solid #f1f1f1;
+    }
+  }
+  
+  .flex-slide {
+    -webkit-flex: 1;
+    -ms-flex: 1; 
+    flex: 1;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-slide {
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-slide p {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-slide ul li {
+      font-size: 2em;
+    }
+  }
+  
+  .flex-slide:hover {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+   
+  }
+  .flex-slide:hover .fleximgtext {
+    opacity: 100;
+    margin-top: -6vh;
+
+}
+  .home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/premium-vector/electric-cable-with-copper-wire-conductors-poster_8071-1420.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  @media screen and (min-width: 768px) {
+    .home {
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes aboutFlexSlide {
+    0% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+    50% {
+      -webkit-flex-grow: 3;
+      flex-grow: 3;
+    }
+    100% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .flex-title-home {
+      transform: rotate(0deg);
+      top: 15%;
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes homeFlextitle {
+    0% {
+      transform: rotate(0deg);
+      top: 15%;
+    }
+    50% {
+      transform: rotate(0deg);
+      top: 15%;
+    }
+    100% {
+      transform: rotate(90deg);
+      top: 15%;
+    }
+  }
+  .flex-about-home {
+    opacity: 100;
+  }
+  @media screen and (min-width: 768px) {
+    .flex-about-home {
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes flexAboutHome {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://5.imimg.com/data5/SELLER/Default/2022/6/OP/JK/LF/7138216/plastic-plumbing-pipes-500x500.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .contact-form {
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  .contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://5.imimg.com/data5/MP/YY/MY-929346/machine-tool-accessories.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #222;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    margin-top: 0;
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  .cube1, .cube2 {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+  
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  @-webkit-keyframes sk-cubemove {
+    25% {
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  @keyframes sk-cubemove {
+    25% {
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    }
+    50.1% {
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  
+  
+  
